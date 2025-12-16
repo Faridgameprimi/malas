@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="ms">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Rasa Malas — Bacaan Interaktif</title>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;600&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+<style>
+body {
+  margin:0;
+  font-family: 'Merriweather', serif;
+  background: linear-gradient(135deg, #f5f2ee 0%, #fafaf6 100%);
+  color: #333;
+  line-height: 1.9;
+  scroll-behavior: smooth;
+}
+.page {
+  max-width: 900px;
+  margin: 50px auto;
+  background: #ffffffcc;
+  padding: 50px 60px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+  border-radius: 12px;
+  background-image: linear-gradient(#fdfcf8 1px, transparent 1px);
+  background-size: 100% 30px;
+  position: relative;
+}
+h1 {
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 36px;
+  margin-bottom: 15px;
+  color: #1a1a1a;
+  line-height: 1.2;
+}
+h2 {
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 22px;
+  margin-top: 40px;
+  color: #2b2b2b;
+  border-left: 4px solid #f7c948;
+  padding-left: 12px;
+}
+.author {
+  font-style: italic;
+  margin-bottom: 35px;
+  color: #666;
+}
+.lang-select {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 35px;
+  flex-wrap: wrap;
+}
+button {
+  padding: 10px 16px;
+  border: 1px solid #ccc;
+  background: #faf7ef;
+  cursor: pointer;
+  border-radius: 6px;
+  font-family: inherit;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+button:hover {
+  background: #f7f0d9;
+  border-color: #f7c948;
+}
+button.active {
+  background: #f7c948;
+  color: #fff;
+  border-color: #f7c948;
+}
+.content {
+  display: none;
+  font-size: 18px;
+  color: #333;
+}
+.content.active {
+  display: block;
+}
+p {
+  margin-bottom: 18px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+p.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.highlight {
+  background: #fff2b3;
+  padding: 0 4px;
+  border-radius: 3px;
+}
+footer {
+  text-align: center;
+  margin-top: 60px;
+  font-size: 15px;
+  color: #999;
+}
+.read-progress {
+  position: fixed;
+  top:0; left:0;
+  height:5px;
+  background:#f7c948;
+  width:0%;
+  z-index:100;
+  transition: width 0.2s ease;
+}
+@media(max-width:768px) {
+  .page { padding: 30px 25px; }
+  h1 { font-size: 30px; }
+  h2 { font-size: 20px; }
+  p { font-size: 17px; }
+}
+</style>
+</head>
+<body>
+<div class="read-progress" id="progressBar"></div>
+<div class="page">
+<div class="lang-select">
+  <button onclick="setLang('ms')" id="btn-ms" class="active">Bahasa Melayu</button>
+  <button onclick="setLang('id')" id="btn-id">Bahasa Indonesia</button>
+  <button onclick="setLang('en')" id="btn-en">English</button>
+</div>
+
+<!-- Bahasa Melayu Full -->
+<div id="ms" class="content active">
+<h1>Rasa Malas Bukan Musuhmu — Tapi Pesan Dari Dirimu Sendiri</h1>
+<div class="author">Warren Buffett</div>
+<p>Rasa <span class="highlight">malas</span> bukan tanda kamu bodoh, gagal, atau tidak berbakat.</p>
+<p>Malas ialah tanda kamu sedang <span class="highlight">hilang arah</span>. Tubuh dan fikiran kamu sedang memberi isyarat bahawa ada sesuatu yang tidak kena sama ada dengan sistem hidup kamu, cara kamu mengurus tenaga, atau tujuan kamu sendiri.</p>
+<p>Masalahnya, kebanyakan orang melawan rasa malas dengan memarahi diri sendiri, sedangkan apa yang sepatutnya dilakukan ialah mendengar mesej di sebalik rasa itu. Kerana di balik rasa malas, ada panggilan untuk memperbaiki arah hidupmu.</p>
+<p>Di sebalik rasa malas, ada panggilan untuk berhenti sejenak dan bertanya semula ke mana arah hidup kamu sebenarnya.</p>
+
+<h2>1. Malas muncul kerana kamu kehilangan makna.</h2>
+<p>Kamu tidak akan malas jika kamu tahu dengan jelas mengapa kamu melakukan sesuatu. Apabila tujuan itu bermakna, otak kamu secara automatik akan mencari cara untuk bergerak.</p>
+<p>Tetapi apabila semuanya hanya tentang kelihatan sibuk atau tidak mahu kalah dengan orang lain, tenaga mental kamu akan runtuh.</p>
+<p>Jadi jangan kejar motivasi. Cari makna. Tulis semula alasan kamu bekerja, belajar, dan berjuang.</p>
+<p>Jangan tuntut hasil yang sempurna. Cukup ukur kemajuan hari ini berbanding semalam.</p>
+<p>Apabila kamu berani bergerak tanpa menunggu sempurna, rasa malas akan berubah menjadi rasa ingin tahu.</p>
+<p>Otak kamu akan mula menikmati proses, bukan takut kepada kegagalan.</p>
+<p>Rasa malas bukan musuh. Ia adalah cermin.</p>
+<p>Ia memintamu berhenti seketika dan bertanya: Adakah aku masih berjalan ke arah yang betul? Adakah aku masih ingat mengapa aku bermula?</p>
+<p>Kamu tidak perlukan motivasi besar untuk berubah. Kamu hanya perlukan satu langkah kecil yang kamu ulang setiap hari.</p>
+<p>Kerana orang yang berjaya bukan orang yang sentiasa bersemangat, tetapi orang yang tahu bagaimana untuk terus bergerak walaupun rasa malas datang.</p>
+
+<h2>2. Malas datang kerana kamu menunggu mood, bukan membina sistem.</h2>
+<p>Orang yang berjaya tidak bergantung pada suasana hati. Mereka tahu semangat datang dan pergi, tetapi tabiat akan kekal.</p>
+<p>Disiplin ialah jambatan antara niat dan hasil.</p>
+<p>Mulakan kecil tetapi konsisten. Sedikit demi sedikit, tindakan itu akan menjadi automatik.</p>
+
+<h2>3. Kamu malas kerana terlalu kerap menangguh.</h2>
+<p>Menangguh bukan rehat. Ia adalah beban mental. Setiap tugasan yang ditangguh menjadi simpanan stres dalam kepala kamu.</p>
+<p>Cuba lakukan lima minit sahaja. Apabila kamu mula bergerak, momentum akan menyusul.</p>
+
+<h2>4. Kadang-kadang rasa malas muncul kerana kamu terlalu keras pada diri sendiri.</h2>
+<p>Tidak semua diam itu malas. Kadang-kadang ia tanda tubuh dan fikiran kamu sedang memulihkan tenaga.</p>
+<p>Belajarlah membezakan antara rehat dan lari daripada tanggungjawab.</p>
+
+<h2>5. Di sebalik rasa malas, selalunya ada ketakutan.</h2>
+<p>Ramai orang bukan malas, tetapi takut gagal, takut dinilai, dan takut kecewa.</p>
+<p>Ubah fokus kamu. Jangan tuntut kesempurnaan. Cukup lihat kemajuan hari ini berbanding semalam.</p>
+</div>
+
+<!-- Bahasa Indonesia Full -->
+<div id="id" class="content">
+<h1>Rasa Malas Bukan Musuhmu — Tapi Pesan Dari Dirimu Sendiri</h1>
+<div class="author">Warren Buffett</div>
+<p>Rasa <span class="highlight">malas</span> bukan tanda bahwa kamu bodoh, gagal, atau tidak berbakat.</p>
+<p>Malas adalah tanda bahwa kamu <span class="highlight">kehilangan arah</span>. Tubuh dan pikiranmu sedang memberi sinyal bahwa ada sesuatu yang salah, baik dengan sistem hidupmu, cara kamu mengelola energi, maupun tujuan hidupmu.</p>
+<p>Masalahnya, kebanyakan orang melawan rasa malas dengan memarahi diri sendiri, padahal yang seharusnya dilakukan adalah mendengarkan pesan di balik rasa itu. Karena di balik rasa malas, ada panggilan untuk memperbaiki arah hidup.</p>
+
+<h2>1. Malas muncul karena kamu kehilangan makna.</h2>
+<p>Kamu tidak akan malas jika kamu benar-benar tahu dengan jelas mengapa kamu melakukan sesuatu.</p>
+<p>Ketika tujuanmu bermakna, otakmu akan otomatis mencari cara untuk bergerak.</p>
+<p>Namun ketika semuanya hanya tentang terlihat sibuk atau tidak mau kalah dari orang lain, energi mentalmu akan runtuh.</p>
+<p>Jadi, jangan kejar motivasi. Temukan makna. Tulis ulang alasanmu bekerja, belajar, dan berjuang.</p>
+<p>Jangan menuntut hasil yang sempurna. Cukup ukur kemajuan hari ini dibandingkan kemarin.</p>
+<p>Begitu kamu berani bergerak tanpa menunggu sempurna, rasa malas akan berubah menjadi rasa penasaran.</p>
+<p>Otakmu mulai menikmati proses belajar, bukan takut gagal dalam percobaan.</p>
+
+<h2>2. Malas datang karena kamu menunggu mood, bukan membangun sistem.</h2>
+<p>Orang yang sukses tidak bergantung pada suasana hati. Mereka tahu semangat datang dan pergi, tetapi kebiasaan akan bertahan.</p>
+<p>Disiplin adalah jembatan antara niat dan hasil.</p>
+<p>Mulailah dari hal kecil tetapi konsisten. Tulis satu halaman setiap pagi, olahraga sepuluh menit, belajar lima belas menit tanpa gangguan. Lama-kelamaan, tindakan itu menjadi otomatis, dan ketika itu terjadi, rasa malas tidak lagi mengendalikanmu.</p>
+
+<h2>3. Kamu malas karena terlalu sering menunda.</h2>
+<p>Menunda bukan berarti istirahat. Menunda adalah beban mental. Setiap tugas yang kamu tunda menjadi tabungan stres di kepalamu.</p>
+<p>Akhirnya kamu lelah bahkan sebelum memulai. Cobalah trik sederhana: lakukan lima menit saja. Begitu kamu bergerak, otakmu akan menyalakan momentum.</p>
+<p>Rasa malas hanya kuat di awal. Setelah itu, ia menghilang.</p>
+
+<h2>4. Kadang rasa malas muncul karena kamu terlalu keras pada diri sendiri.</h2>
+<p>Kamu terus memaksa tanpa memberi ruang untuk pulih. Otakmu jenuh, tubuhmu lelah, dan fokusmu menghilang.</p>
+<p>Ingat, tidak semua diam berarti malas. Kadang itu tanda bahwa tubuhmu sedang memulihkan tenaga. Belajarlah membedakan antara istirahat dan pelarian. Istirahat membuatmu siap melangkah kembali. Pelarian membuatmu lupa arah.</p>
+
+<h2>5. Di balik rasa malas, sering kali ada ketakutan.</h2>
+<p>Banyak orang bukan malas, tetapi takut gagal, takut dinilai, takut kecewa.</p>
+<p>Maka mereka memilih diam. Bukan karena tidak mau bergerak, tetapi karena takut kecewa pada diri sendiri.</p>
+<p>Ubah fokusmu. Jangan menuntut hasil sempurna. Cukup ukur kemajuan hari ini dibanding kemarin.</p>
+</div>
+
+<!-- English Full -->
+<div id="en" class="content">
+<h1>Laziness Is Not Your Enemy — It Is a Message From Yourself</h1>
+<div class="author">Warren Buffett</div>
+<p><span class="highlight">Laziness</span> is not a sign that you are stupid, a failure, or untalented.</p>
+<p>Laziness is a sign that you have lost <span class="highlight">direction</span>. Your body and mind are sending signals that something is wrong, either with your system, how you manage your energy, or your purpose.</p>
+<p>The problem is that most people fight laziness by being angry at themselves, when what they should do is listen to the message behind it. Because behind laziness, there is a call to correct the direction of your life.</p>
+
+<h2>1. Laziness appears when you lose meaning.</h2>
+<p>You will not feel lazy when you clearly understand why you are doing something.</p>
+<p>When your goal has meaning, your brain automatically looks for ways to move.</p>
+<p>But when everything is only about looking busy or competing with others, your mental energy collapses.</p>
+<p>So do not chase motivation. Find meaning. Rewrite your reasons for working, learning, and struggling.</p>
+<p>Do not demand perfect results. Simply measure today’s progress compared to yesterday.</p>
+<p>Once you dare to move without waiting for perfection, laziness turns into curiosity.</p>
+<p>Your brain begins to enjoy the learning process instead of fearing failure.</p>
+
+<h2>2. Laziness comes because you wait for mood, not because you build systems.</h2>
+<p>Successful people do not depend on feelings. They know motivation comes and goes, but habits remain.</p>
+<p>Discipline is the bridge between intention and results.</p>
+<p>Start small but stay consistent. Write one page every morning, exercise for ten minutes, study for fifteen minutes without distraction. Over time, these actions become automatic. And when that happens, laziness no longer controls you.</p>
+
+<h2>3. You feel lazy because you procrastinate too often.</h2>
+<p>Procrastination is not rest. It is mental weight. Every task you delay becomes stored stress in your mind.</p>
+<p>Eventually, you feel tired even before you begin. Try a simple trick: do it for just five minutes. Once you start moving, your brain activates momentum. Laziness is only strong at the beginning. After that, it fades.</p>
+
+<h2>4. Sometimes laziness appears because you are too hard on yourself.</h2>
+<p>You keep pushing without giving yourself space to recover. Your mind becomes exhausted, your body gets tired, and your focus disappears.</p>
+<p>Remember, not all pauses mean laziness. Sometimes they are signs that your body is restoring its energy. Learn to distinguish between rest and escape. Rest prepares you to move again. Escape makes you forget your direction.</p>
+
+<h2>5. Behind laziness, there is often fear.</h2>
+<p>Many people are not lazy, they are afraid of failing. Afraid of bad results, afraid of judgment, afraid of disappointment.</p>
+<p>So they choose to stay still. Not because they do not want to move, but because they are afraid of being disappointed in themselves.</p>
+<p>Change your focus. Do not demand perfection. Simply measure today’s progress compared to yesterday.</p>
+</div>
+
+<footer>Website ini dibuat oleh <strong>IMAN AKID</strong></footer>
+</div>
+
+<script>
+function setLang(lang){
+  document.querySelectorAll('.content').forEach(c=>c.classList.remove('active'));
+  document.getElementById(lang).classList.add('active');
+  document.querySelectorAll('button').forEach(b=>b.classList.remove('active'));
+  document.getElementById('btn-'+lang).classList.add('active');
+}
+function revealOnScroll() {
+  document.querySelectorAll('.content.active p').forEach(p => {
+    let top = p.getBoundingClientRect().top;
+    let bottom = window.innerHeight;
+    if(top < bottom - 50){ p.classList.add('visible'); }
+  });
+}
+function updateProgress(){
+  const page = document.querySelector('.page');
+  const scrollTop = window.scrollY;
+  const pageHeight = page.scrollHeight - window.innerHeight;
+  const percent = (scrollTop / pageHeight) * 100;
+  document.getElementById('progressBar').style.width = percent + '%';
+}
+window.addEventListener('scroll', ()=>{ revealOnScroll(); updateProgress(); });
+window.addEventListener('load', ()=>{ revealOnScroll(); updateProgress(); });
+</script>
+</body>
+</html>
